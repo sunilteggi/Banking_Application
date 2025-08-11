@@ -1,0 +1,482 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.dashboard-header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.error-text {
+    background: #ffe6e6;
+    color: #d63031;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Section Styling */
+.accounts-section,
+.create-account-section,
+.transaction-operations,
+.transactions-section {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.accounts-section h2,
+.create-account-section h2,
+.transaction-operations h2,
+.transactions-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+
+.accounts-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.account-select {
+    padding: 12px 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    min-width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+.account-select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.balance-display {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.create-account-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.create-account-form input {
+    padding: 12px 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+.create-account-form input:focus {
+    border-color: #27ae60;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+}
+
+.create-account-form button {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-account-form button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
+
+.create-account-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Transaction Forms */
+.transaction-forms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .transaction-forms {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.deposit-box {
+    border-color: #27ae60;
+}
+
+.withdraw-box {
+    border-color: #e74c3c;
+}
+
+.form-box h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-box input {
+    padding: 12px 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-box input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.deposit-box input:focus {
+    border-color: #27ae60;
+}
+
+.withdraw-box input:focus {
+    border-color: #e74c3c;
+}
+
+.deposit-btn {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.withdraw-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.deposit-btn:hover:not(:disabled),
+.withdraw-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+.deposit-btn:hover:not(:disabled) {
+    box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
+
+.withdraw-btn:hover:not(:disabled) {
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+.deposit-btn:disabled,
+.withdraw-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+.transaction-search {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+.search-filters {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 180px;
+}
+
+.filter-group label {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.search-select,
+.search-date {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.search-select:focus,
+.search-date:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+.clear-filters-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+}
+
+.clear-filters-btn:hover {
+    background: white;
+    color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255,255,255,0.3);
+}
+
+
+.transaction-results {
+    margin-top: 20px;
+}
+
+.results-summary {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.results-count {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.filter-info {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.transactions-container {
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+}
+
+.transaction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transaction-item {
+    background: white;
+    border-bottom: 1px solid #e1e8ed;
+    padding: 20px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.transaction-item:hover {
+    background: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-item.deposit {
+    border-left: 4px solid #27ae60;
+}
+
+.transaction-item.withdraw,
+.transaction-item.withdrawal,
+.transaction-item.debit {
+    border-left: 4px solid #e74c3c;
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.transaction-type-badge {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.transaction-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.transaction-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.transaction-amount {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.transaction-amount.positive {
+    color: #27ae60;
+}
+
+.transaction-amount.negative {
+    color: #e74c3c;
+}
+
+.transaction-balance {
+    color: #34495e;
+    font-weight: 600;
+    background: #ecf0f1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.no-transactions {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px dashed #bdc3c7;
+}
+
+.no-transactions p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.show-all-btn {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.show-all-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+    
+    .dashboard-header {
+        font-size: 2rem;
+    }
+    
+    .search-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        min-width: auto;
+    }
+    
+    .transaction-header,
+    .transaction-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .accounts-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .create-account-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
