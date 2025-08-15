@@ -1,3 +1,51 @@
+#  Titan Bank – Full-Stack Banking Application
+
+Titan Bank is a secure and user-friendly banking web application built using **Spring Boot**, **React.js**, and **MySQL**. It simulates core banking features such as account creation, balance management, fund transfers, and transaction tracking – designed to provide a smooth digital banking experience.
+
+---
+
+##  Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Screenshots](#-screenshots)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [API Endpoints](#-api-endpoints)
+- [Future Enhancements](#-future-enhancements)
+- [Author](#-author)
+- [License](#-license)
+
+---
+
+##  Features
+
+-  User registration and login
+-  Account dashboard with current balance
+-  Secure fund transfer between users
+-  Transaction history with timestamps
+-  Error handling & form validation
+-  Clean and responsive UI
+
+---
+
+##  Tech Stack
+
+### Frontend
+- React.js
+- Axios (for REST API calls)
+- HTML5, CSS3
+
+### Backend
+- Java 21
+- Spring Boot
+- Spring Data JPA
+- REST APIs
+- Maven
+
+### Database
+- MySQL
+
 #Here is the glimps How the Application Looks!!!!!
 
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/782beaff62749dec074512d3b1cc287871539c92/Screenshot%20(34).png)
@@ -12,6 +60,48 @@
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/3213c551f3fb15ffacee7450bcb39b2e98843e79/Screenshot%20(32).png)
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/425b0657dff23bf039f6afdeb97fddec94d7e4aa/Screenshot%20(33).png)
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/0a7efa429c2c28399e4e0ffe5c4b2652291bf480/Screenshot%20(37).png)
+
+##  Getting Started
+
+### Prerequisites
+
+### Prerequisites
+
+- Java 21
+- Node.js & npm
+- MySQL
+- Maven
+### Backend Setup (Spring Boot)
+
+# Cdone the repository
+git clone https://github.com/SunilTeggi/Banking_App.git
+cd Banking_App/banking_app  
+OR
+cd ../banking_frontend
+cd ../app-frontend
+
+
+# Configure DB credentials in src/main/resources/application.properties
+
+# Run the application
+./mvnw spring-boot:run
+
+cd ../banking_frontend
+
+# Install dependencies
+npm install
+
+Start development server
+npm start
+
+```
+
+###  License
+
+This project is open for educational and demonstration purposes.
+Feel free to explore, learn from it, and build upon it.
+
+
 
 
 
