@@ -1,3 +1,26 @@
+#SNIPPETS OF PROJECT
+![image alt](https://github.com/sunilteggi/Banking_Application/blob/782beaff62749dec074512d3b1cc287871539c92/Screenshot%20(34).png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
