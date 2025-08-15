@@ -1,5 +1,6 @@
 #SNIPPETS OF PROJECT
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/782beaff62749dec074512d3b1cc287871539c92/Screenshot%20(34).png)
+![image alt](https://github.com/sunilteggi/Banking_Application/blob/fc2f9761f65236c7095d73c3c89b981ddc0116a3/Screenshot%20(35).png)
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/63c448b822c93059c98a86c200f64999703b4edc/Screenshot%20(21).png)
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/99ac02563f5f7fdfb6426139f449f7339bdafa60/Screenshot%20(23).png)
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/63409ebac837b9878ee0304eea624c77a99e636b/Screenshot%20(24).png)
