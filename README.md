@@ -1,4 +1,5 @@
-#SNIPPETS OF PROJECT
+#Here is the glimps How the Application Looks!!!!!
+
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/782beaff62749dec074512d3b1cc287871539c92/Screenshot%20(34).png)
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/fc2f9761f65236c7095d73c3c89b981ddc0116a3/Screenshot%20(35).png)
 ![image alt](https://github.com/sunilteggi/Banking_Application/blob/dba42dee82959444c8f6fe6aa923474d1d374981/Screenshot%20(36).png)
