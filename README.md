@@ -73,7 +73,7 @@ Titan Bank is a secure and user-friendly banking web application built using **S
 - Maven
 ### Backend Setup (Spring Boot)
 
-# Cdone the repository
+# Clone the repository
 git clone https://github.com/SunilTeggi/Banking_App.git
 cd Banking_App/banking_app  
 OR
@@ -100,20 +100,6 @@ npm start
 
 This project is open for educational and demonstration purposes.
 Feel free to explore, learn from it, and build upon it.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Getting Started with Create React App
 
